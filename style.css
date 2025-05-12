@@ -55,13 +55,13 @@ body {
 }
 
 .nav ul li a:hover {
-  background-color: #00FF7F; 
+  background-color: #00FF7F;
   border-radius: 5px;
 }
 
 /* BOTÃO LOGIN */
 .botao-login {
-  background-color: #00FF7F; 
+  background-color: #00FF7F;
   border-radius: 5px;
 }
 
@@ -186,16 +186,6 @@ footer {
 .card-menu:hover {
   transform: translateY(-5px);
   background-color: #00FF7F;
-}
-
-/* FRASE DO BANNER */
-.frase-banner {
-  color: whitesmoke;
-}
-
-.frase-banner .verde {
-  color: #4caf50;
-  font-weight: bold;
 }
 
 /* BARRA DE PESQUISA */
@@ -402,15 +392,14 @@ footer {
     flex-direction: column;
     align-items: flex-start;
   }
-
   .nav ul {
     flex-direction: column;
     gap: 10px;
   }
-
   .barra-pesquisa {
     margin-top: 10px;
     width: 100%;
   }
 }
+
 
