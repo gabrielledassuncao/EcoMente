@@ -379,18 +379,46 @@ footer {
 
 
 /* RESPONSIVO */
-@media (max-width: 768px) {
+@media only screen and (max-width: 500px) {
   .container-header {
     flex-direction: column;
     align-items: flex-start;
+    padding: 10px;
   }
+
   .nav ul {
     flex-direction: column;
-    gap: 10px;
-  }
-  .barra-pesquisa {
-    margin-top: 10px;
+    gap: 0;
     width: 100%;
   }
+
+  .nav ul li {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+
+  .barra-pesquisa input {
+    width: 90vw;
+    font-size: 14px;
+  }
+
+  .cards {
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+  }
+
+  .card, .card-menu {
+    width: 90vw;
+    padding: 14px;
+    font-size: 1rem;
+  }
+
+  .botao-login, .card-menu, .card .botao {
+    font-size: 1rem;
+    padding: 10px 0;
+  }
 }
+
+
 
