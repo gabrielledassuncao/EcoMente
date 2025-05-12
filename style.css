@@ -28,6 +28,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
 }
 
 .logo {
@@ -63,11 +64,14 @@ body {
 .botao-login {
   background-color: #00FF7F;
   border-radius: 5px;
+  padding: 8px 12px;
+  color: #202020;
+  font-weight: bold;
 }
 
 /* BANNER */
 .frase-banner {
-  color: whitesmoke;
+  color: white;
 }
 
 .frase-banner .verde {
@@ -75,11 +79,10 @@ body {
   font-weight: bold;
 }
 
-
 /* MAIN */
 main {
-  margin-top: 30px;
-  padding: 40px 20px;
+  margin-top: 90px;
+  padding: 10px 0 0 0;
 }
 
 /* SECTIONS */
@@ -376,49 +379,121 @@ footer {
   text-decoration: underline;
 }
 
-
+/* MENU HAMBÚRGUER - só aparece no mobile */
+#menu-button {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: #4caf50;
+  cursor: pointer;
+  margin-right: 12px;
+}
 
 /* RESPONSIVO */
-@media only screen and (max-width: 500px) {
+@media (max-width: 800px) {
   .container-header {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 10px;
-  }
-
-  .nav ul {
-    flex-direction: column;
-    gap: 0;
-    width: 100%;
-  }
-
-  .nav ul li {
-    width: 100%;
-    margin-bottom: 8px;
-  }
-
-  .barra-pesquisa input {
-    width: 90vw;
-    font-size: 14px;
-  }
-
-  .cards {
-    flex-direction: column;
-    gap: 16px;
+    flex-wrap: wrap;
+    flex-direction: row;
     align-items: center;
   }
-
-  .card, .card-menu {
-    width: 90vw;
-    padding: 14px;
-    font-size: 1rem;
+  #menu-button {
+    display: block;
+    order: 2;
   }
-
-  .botao-login, .card-menu, .card .botao {
+  .barra-pesquisa {
+    order: 3;
+    width: 100%;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+  }
+  #menu-nav {
+    display: none;
+    position: absolute;
+    top: 60px; /* ajuste conforme sua header */
+    left: 0;
+    width: 100vw;
+    background: #181818;
+    z-index: 1001;
+    padding: 16px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  }
+  #menu-nav.active {
+    display: block;
+  }
+  #menu-nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    padding-left: 24px;
+    display: flex;
+  }
+  .botao-login {
+    width: 90%;
+    margin: 10px auto 0 auto;
+    display: block;
+    text-align: center;
+  }
+  .nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+    margin-bottom: 4px;
+    display: flex;
+  }
+  .nav ul li a, .botao-login {
     font-size: 1rem;
-    padding: 10px 0;
+    padding: 8px 0;
+    width: 100%;
+    text-align: left;
+    border-radius: 0;
+    margin: 0;
+  }
+  .logo {
+    font-size: 1.2rem;
+    margin-bottom: 2px;
+  }
+  .banner {
+    margin-top: 8px;
+    margin-bottom: 12px;
+  }
+  .frase-banner {
+    font-size: 1.1rem;
+    padding: 0 4px;
+    word-break: break-word;
+  }
+  .cards, .menu-cards {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+  .card, .card-menu {
+    width: 96vw;
+    padding: 12px;
+    font-size: 1rem;
+    margin-bottom: 8px;
+  }
+  section {
+    margin: 24px auto;
   }
 }
 
+@media (min-width: 801px) {
+  #menu-nav {
+    display: block !important;
+    position: static;
+    background: none;
+    box-shadow: none;
+    padding: 0;
+    width: auto;
+  }
+  #menu-nav ul {
+    flex-direction: row;
+    gap: 20px;
+    padding-left: 0;
+    display: flex;
+  }
+}
 
 
