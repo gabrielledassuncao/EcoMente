@@ -75,20 +75,10 @@ body {
   font-weight: bold;
 }
 
-.banner h2 {
-  color: #4caf50;
-  font-size: 32px;
-  margin-bottom: 10px;
-}
-
-.banner p {
-  color: #ccc;
-  font-size: 18px;
-}
 
 /* MAIN */
 main {
-  margin-top: 120px;
+  margin-top: 30px;
   padding: 40px 20px;
 }
 
@@ -386,6 +376,8 @@ footer {
   text-decoration: underline;
 }
 
+
+
 /* RESPONSIVO */
 @media (max-width: 768px) {
   .container-header {
@@ -401,5 +393,4 @@ footer {
     width: 100%;
   }
 }
-
 
