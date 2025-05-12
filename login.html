@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoMente</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- MENU FIXO -->
+  <header class="header">
+    <div class="container-header">
+      <a href="index.html" class="logo">EcoMente</a>
+       <!-- BARRA DE PESQUISA-->
+       <div class="barra-pesquisa">
+        <input type="text" placeholder="Pesquisar no site..." id="campo-pesquisa">
+        <button type="button" class="botao-lupa" onclick="pesquisar()">🔍︎</button>
+      </div>
+      
+      
+      <nav class="nav">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobre.html">Quem Somos</a></li>
+          <li><a href="cursos.html">Cursos</a></li>
+          <li><a href="comunidade.html">Comunidade</a></li>
+          <li><a href="login.html" class="botao-login"><b>Área do Aluno</b></a></li>
+        </ul>
+      </nav>
+
+      </div>
+      
+    </div>
+  </header>
+         <!-- ÁREA DE LOGIN-->
+  <div class="container-login">
+    <form class="login-form">
+      <h2>Entrar ou Cadastrar</h2>
+
+      <div class="input-group">
+        <input type="email" required>
+        <label>Email</label>
+      </div>
+
+      <div class="input-group">
+        <input type="password" required>
+        <label>Senha</label>
+      </div>
+
+      <button type="submit" class="btn-login">Entrar</button>
+      <button type="button" class="btn-cadastro">Cadastre-se</button>
+
+      <p class="register-link">Esqueceu a senha? <a href="#">Recuperar</a></p>
+    </form>
+  </div>
+</main>
+<footer>
+    <p>Projeto EcoMente © 2025</p>
+</footer>
+
+
+</body>
+</html>

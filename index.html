@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoMente</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- MENU FIXO -->
+  <header class="header">
+    <div class="container-header">
+      <a href="index.html" class="logo">EcoMente</a>
+       <!-- BARRA DE PESQUISA-->
+       <div class="barra-pesquisa">
+        <input type="text" placeholder="Pesquisar no site..." id="campo-pesquisa">
+        <button type="button" class="botao-lupa" onclick="pesquisar()">🔍︎</button>
+      </div>
+      
+      
+      <nav class="nav">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobre.html">Quem Somos</a></li>
+          <li><a href="cursos.html">Cursos</a></li>
+          <li><a href="comunidade.html">Comunidade</a></li>
+          <li><a href="login.html" class="botao-login"><b>Área do Aluno</b></a></li>
+        </ul>
+      </nav>
+
+      </div>
+      
+    </div>
+  </header>
+
+  <!-- CONTEÚDO -->
+  <main>
+    <section id="inicio" class="banner">
+        <h2 class="frase-banner">
+            Conectando mentes ao futuro <span class="verde">sustentável</span>.
+          </h2>
+          
+    </section>
+
+    <section id="conteudo" class="menu-cards">
+        <a href="cursos.html" class="card-menu">
+            <h3>Cursos</h3>
+            <p>Energia Solar, Eólica, Hidrelétrica, Biomassa e mais...</p>
+          </a>
+        
+          <a href="videos.html" class="card-menu">
+            <h3>Vídeos</h3>
+            <p>Aulas, documentários e vídeos educativos sobre sustentabilidade.</p>
+          </a>
+        
+          <a href="trilhas.html" class="card-menu">
+            <h3>Trilhas de Conhecimento</h3>
+            <p>Trilhas completas para dominar Energias Renováveis do básico ao avançado.</p>
+          </a>
+        
+          <a href="certificados.html" class="card-menu">
+            <h3>Certificados</h3>
+            <p>Receba seu certificado de conclusão dos nossos cursos gratuitos!</p>
+          </a>
+
+    </section>
+  </main>
+
+  <!-- RODAPÉ -->
+  <footer>
+    <p>© 2025 EcoMente - Educação para um futuro sustentável</p>
+
+    <script>
+        function pesquisar() {
+          const busca = document.getElementById('campo-pesquisa').value.toLowerCase();
+          if (busca) {
+            alert('Você pesquisou por: ' + busca);
+            // Aqui futuramente você pode redirecionar ou filtrar conteúdos
+          } else {
+            alert('Por favor, digite algo para pesquisar!');
+          }
+        }
+      </script>
+      
+  </footer>
+ 
+
+</body>
+</html>
+
