@@ -62,7 +62,24 @@
         <footer>
             <p>Projeto EcoMente © 2025</p>
         </footer>
-        
+         <!-- Script de pesquisa e menu mobile -->
+  <script>
+    function pesquisar() {
+      const busca = document.getElementById('campo-pesquisa').value.toLowerCase();
+      if (busca) {
+        alert('Você pesquisou por: ' + busca);
+      } else {
+        alert('Por favor, digite algo para pesquisar!');
+      }
+    }
+
+    // Menu hambúrguer mobile
+    const menuButton = document.getElementById('menu-button');
+    const menuNav = document.getElementById('menu-nav');
+    menuButton.addEventListener('click', function() {
+      menuNav.classList.toggle('active');
+    });
+  </script>
  
 </body>
 </html>
