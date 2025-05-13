@@ -411,7 +411,7 @@ footer {
   #menu-nav {
     display: none;
     position: absolute;
-    top: 60px; /* ajuste conforme sua header */
+    top: 60px; 
     left: 0;
     width: 100vw;
     background: #181818;
