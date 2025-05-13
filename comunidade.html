@@ -60,19 +60,22 @@
     <p>© 2025 EcoMente - Educação para um futuro sustentável</p>
   </footer>
 
+  <!-- Script de pesquisa e menu mobile -->
   <script>
-    const form = document.getElementById('form-pergunta');
-    const lista = document.getElementById('lista-perguntas');
+    function pesquisar() {
+      const busca = document.getElementById('campo-pesquisa').value.toLowerCase();
+      if (busca) {
+        alert('Você pesquisou por: ' + busca);
+      } else {
+        alert('Por favor, digite algo para pesquisar!');
+      }
+    }
 
-    form.addEventListener('submit', function(e) {
-      e.preventDefault();
-      const nome = document.getElementById('nome').value;
-      const mensagem = document.getElementById('mensagem').value;
-      const pergunta = document.createElement('div');
-      pergunta.classList.add('pergunta');
-      pergunta.innerHTML = `<strong>${nome}</strong>: ${mensagem}`;
-      lista.appendChild(pergunta);
-      form.reset();
+    // Menu hambúrguer mobile
+    const menuButton = document.getElementById('menu-button');
+    const menuNav = document.getElementById('menu-nav');
+    menuButton.addEventListener('click', function() {
+      menuNav.classList.toggle('active');
     });
   </script>
 
